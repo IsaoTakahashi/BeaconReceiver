@@ -49,7 +49,12 @@
         self.nameField.backgroundColor = [UIColor cyanColor];
         self.activateSwitch.enabled = YES;
     } else {
-        self.nameField.backgroundColor = [UIColor redColor];
+        if(self.nameField.text.length < 1) {
+            self.nameField.backgroundColor = [UIColor whiteColor];
+        } else {
+            self.nameField.backgroundColor = [UIColor redColor];
+        }
+        
         self.activateSwitch.on = NO;
         self.activateSwitch.enabled = NO;
     }
@@ -92,12 +97,34 @@
     [self updateReceiverinfo];
 }
 
+- (void) connected
+{
+    self.placeLabel.text = @"...";
+    self.beaconStatusLabel.text = @"...";
+    self.currentStatus = @"Unknown";
+    
+    if (self.beaconClient != nil) {
+        [self.beaconClient  stop];
+    }
+    self.beaconClient = [BeaconClient getInstance];
+    self.beaconClient .delegate = self;
+    [self.beaconClient  start];
+}
+
 - (void) disconnected
 {
     self.activateSwitch.on = NO;
     
     self.placeLabel.text = @"Nowhere";
     self.beaconStatusLabel.text = @"None";
+    
+    if (self.beaconClient != nil) {
+        [self.beaconAPI sendRangeStatus:[UserSettingUtil getUserNameWithService:@"BeaconReceiver"]
+                               beaconId:self.beaconClient.uuid
+                              curStatus:@"Exit"
+         ];
+        [self.beaconClient  stop];
+    }
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
@@ -111,12 +138,38 @@
     if (status) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Activation" message:@"Beacon Receiver has activated." delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
         [alert show];
+        
+        [self connected];
     } else {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Activation" message:@"Connection was failed." delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
         [alert show];
         
         [self disconnected];
     }
+}
+
+- (void) getRoomName:(NSString *)roomName {
+    self.placeLabel.text = roomName;
+}
+
+- (void) fixedRangeStatus:(NSString *)status
+{
+    self.beaconStatusLabel.text = status;
+    
+    
+    if (![self.currentStatus isEqualToString:status]) {
+        // room name update
+        [self.beaconAPI getRoomNameWithBeaconID:self.beaconClient.uuid];
+        
+        //send status to server
+        [self.beaconAPI sendRangeStatus:[UserSettingUtil getUserNameWithService:@"BeaconReceiver"]
+                               beaconId:self.beaconClient.uuid
+                              curStatus:[NSString stringWithString:status]
+         ];
+        
+        self.currentStatus = status;
+    }
+    
 }
 
 @end

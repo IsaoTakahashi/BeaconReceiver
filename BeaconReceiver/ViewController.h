@@ -8,11 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import "BeaconAPI.h"
+#import "BeaconClient.h"
 #import "MBProgressHUD.h"
 
-@interface ViewController : UIViewController<UITextFieldDelegate,BeaconAPIDelegate>
+
+@interface ViewController : UIViewController<UITextFieldDelegate,BeaconAPIDelegate,BeaconClientDeletage>
 
 @property (nonatomic) BeaconAPI *beaconAPI;
+@property (nonatomic) BeaconClient *beaconClient;
+@property (nonatomic) NSString *currentStatus;
 
 @property (weak, nonatomic) IBOutlet UITextField *nameField;
 @property (weak, nonatomic) IBOutlet UILabel *backLabel;

@@ -34,6 +34,7 @@
 		4DC15886188B6CD500804F18 /* SFHFKeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC15883188B6CD500804F18 /* SFHFKeychainUtils.m */; };
 		4DC1588A188B77E800804F18 /* BeaconAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC15889188B77E800804F18 /* BeaconAPI.m */; };
 		4DC1588E188B7D0E00804F18 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC1588D188B7D0E00804F18 /* MBProgressHUD.m */; };
+		4DC15892188B94BF00804F18 /* BeaconClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC15891188B94BF00804F18 /* BeaconClient.m */; };
 		D8E2D2869E544526A6F349B1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F302B3B5733449D8EB2106B /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +90,8 @@
 		4DC15889188B77E800804F18 /* BeaconAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconAPI.m; sourceTree = "<group>"; };
 		4DC1588C188B7D0E00804F18 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		4DC1588D188B7D0E00804F18 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		4DC15890188B94BF00804F18 /* BeaconClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconClient.h; sourceTree = "<group>"; };
+		4DC15891188B94BF00804F18 /* BeaconClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconClient.m; sourceTree = "<group>"; };
 		5F302B3B5733449D8EB2106B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -158,6 +161,7 @@
 		4DC15838188B639600804F18 /* BeaconReceiver */ = {
 			isa = PBXGroup;
 			children = (
+				4DC1588F188B948A00804F18 /* iBeacon */,
 				4DC15887188B77C500804F18 /* API */,
 				4DC1587E188B6CD500804F18 /* ExternalLibrary */,
 				4DC15871188B6C8000804F18 /* Category */,
@@ -262,6 +266,15 @@
 				4DC1588D188B7D0E00804F18 /* MBProgressHUD.m */,
 			);
 			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		4DC1588F188B948A00804F18 /* iBeacon */ = {
+			isa = PBXGroup;
+			children = (
+				4DC15890188B94BF00804F18 /* BeaconClient.h */,
+				4DC15891188B94BF00804F18 /* BeaconClient.m */,
+			);
+			path = iBeacon;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -406,6 +419,7 @@
 				4DC1587D188B6C8000804F18 /* UIImage+Edit.m in Sources */,
 				4DC15843188B639600804F18 /* AppDelegate.m in Sources */,
 				4DC15886188B6CD500804F18 /* SFHFKeychainUtils.m in Sources */,
+				4DC15892188B94BF00804F18 /* BeaconClient.m in Sources */,
 				4DC1587C188B6C8000804F18 /* NSString+Validate.m in Sources */,
 				4DC1583F188B639600804F18 /* main.m in Sources */,
 				4DC15870188B6C4500804F18 /* UserSettingUtil.m in Sources */,
