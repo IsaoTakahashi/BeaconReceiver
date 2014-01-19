@@ -21,6 +21,20 @@
 		4DC15854188B639600804F18 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC15836188B639600804F18 /* UIKit.framework */; };
 		4DC1585C188B639600804F18 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4DC1585A188B639600804F18 /* InfoPlist.strings */; };
 		4DC1585E188B639600804F18 /* BeaconReceiverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC1585D188B639600804F18 /* BeaconReceiverTests.m */; };
+		4DC15868188B6B4200804F18 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC15867188B6B4200804F18 /* Security.framework */; };
+		4DC1586A188B6B4700804F18 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC15869188B6B4700804F18 /* CFNetwork.framework */; };
+		4DC1586C188B6B6C00804F18 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC1586B188B6B6C00804F18 /* SystemConfiguration.framework */; };
+		4DC15870188B6C4500804F18 /* UserSettingUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC1586F188B6C4500804F18 /* UserSettingUtil.m */; };
+		4DC1587A188B6C8000804F18 /* NSDate+Softbuild.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC15873188B6C8000804F18 /* NSDate+Softbuild.m */; };
+		4DC1587B188B6C8000804F18 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC15875188B6C8000804F18 /* NSString+URLEncoding.m */; };
+		4DC1587C188B6C8000804F18 /* NSString+Validate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC15877188B6C8000804F18 /* NSString+Validate.m */; };
+		4DC1587D188B6C8000804F18 /* UIImage+Edit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC15879188B6C8000804F18 /* UIImage+Edit.m */; };
+		4DC15884188B6CD500804F18 /* MIT-LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 4DC15880188B6CD500804F18 /* MIT-LICENSE */; };
+		4DC15885188B6CD500804F18 /* ReadMe in Resources */ = {isa = PBXBuildFile; fileRef = 4DC15881188B6CD500804F18 /* ReadMe */; };
+		4DC15886188B6CD500804F18 /* SFHFKeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC15883188B6CD500804F18 /* SFHFKeychainUtils.m */; };
+		4DC1588A188B77E800804F18 /* BeaconAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC15889188B77E800804F18 /* BeaconAPI.m */; };
+		4DC1588E188B7D0E00804F18 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC1588D188B7D0E00804F18 /* MBProgressHUD.m */; };
+		D8E2D2869E544526A6F349B1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F302B3B5733449D8EB2106B /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B41C1CA35514F9AA7467C24 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		4DC1582F188B639600804F18 /* BeaconReceiver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeaconReceiver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DC15832188B639600804F18 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4DC15834188B639600804F18 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +68,28 @@
 		4DC15859188B639600804F18 /* BeaconReceiverTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BeaconReceiverTests-Info.plist"; sourceTree = "<group>"; };
 		4DC1585B188B639600804F18 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4DC1585D188B639600804F18 /* BeaconReceiverTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeaconReceiverTests.m; sourceTree = "<group>"; };
+		4DC15867188B6B4200804F18 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		4DC15869188B6B4700804F18 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		4DC1586B188B6B6C00804F18 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4DC1586E188B6C4500804F18 /* UserSettingUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserSettingUtil.h; sourceTree = "<group>"; };
+		4DC1586F188B6C4500804F18 /* UserSettingUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserSettingUtil.m; sourceTree = "<group>"; };
+		4DC15872188B6C8000804F18 /* NSDate+Softbuild.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Softbuild.h"; sourceTree = "<group>"; };
+		4DC15873188B6C8000804F18 /* NSDate+Softbuild.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Softbuild.m"; sourceTree = "<group>"; };
+		4DC15874188B6C8000804F18 /* NSString+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncoding.h"; sourceTree = "<group>"; };
+		4DC15875188B6C8000804F18 /* NSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEncoding.m"; sourceTree = "<group>"; };
+		4DC15876188B6C8000804F18 /* NSString+Validate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Validate.h"; sourceTree = "<group>"; };
+		4DC15877188B6C8000804F18 /* NSString+Validate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Validate.m"; sourceTree = "<group>"; };
+		4DC15878188B6C8000804F18 /* UIImage+Edit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Edit.h"; sourceTree = "<group>"; };
+		4DC15879188B6C8000804F18 /* UIImage+Edit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Edit.m"; sourceTree = "<group>"; };
+		4DC15880188B6CD500804F18 /* MIT-LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "MIT-LICENSE"; sourceTree = "<group>"; };
+		4DC15881188B6CD500804F18 /* ReadMe */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadMe; sourceTree = "<group>"; };
+		4DC15882188B6CD500804F18 /* SFHFKeychainUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFHFKeychainUtils.h; sourceTree = "<group>"; };
+		4DC15883188B6CD500804F18 /* SFHFKeychainUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFHFKeychainUtils.m; sourceTree = "<group>"; };
+		4DC15888188B77E800804F18 /* BeaconAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconAPI.h; sourceTree = "<group>"; };
+		4DC15889188B77E800804F18 /* BeaconAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconAPI.m; sourceTree = "<group>"; };
+		4DC1588C188B7D0E00804F18 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		4DC1588D188B7D0E00804F18 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		5F302B3B5733449D8EB2106B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +97,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DC1586C188B6B6C00804F18 /* SystemConfiguration.framework in Frameworks */,
+				4DC1586A188B6B4700804F18 /* CFNetwork.framework in Frameworks */,
+				4DC15868188B6B4200804F18 /* Security.framework in Frameworks */,
 				4DC15835188B639600804F18 /* CoreGraphics.framework in Frameworks */,
 				4DC15837188B639600804F18 /* UIKit.framework in Frameworks */,
 				4DC15833188B639600804F18 /* Foundation.framework in Frameworks */,
+				D8E2D2869E544526A6F349B1 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +127,7 @@
 				4DC15857188B639600804F18 /* BeaconReceiverTests */,
 				4DC15831188B639600804F18 /* Frameworks */,
 				4DC15830188B639600804F18 /* Products */,
+				0B41C1CA35514F9AA7467C24 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +143,14 @@
 		4DC15831188B639600804F18 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4DC1586B188B6B6C00804F18 /* SystemConfiguration.framework */,
+				4DC15869188B6B4700804F18 /* CFNetwork.framework */,
+				4DC15867188B6B4200804F18 /* Security.framework */,
 				4DC15832188B639600804F18 /* Foundation.framework */,
 				4DC15834188B639600804F18 /* CoreGraphics.framework */,
 				4DC15836188B639600804F18 /* UIKit.framework */,
 				4DC15851188B639600804F18 /* XCTest.framework */,
+				5F302B3B5733449D8EB2106B /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -112,6 +158,10 @@
 		4DC15838188B639600804F18 /* BeaconReceiver */ = {
 			isa = PBXGroup;
 			children = (
+				4DC15887188B77C500804F18 /* API */,
+				4DC1587E188B6CD500804F18 /* ExternalLibrary */,
+				4DC15871188B6C8000804F18 /* Category */,
+				4DC1586D188B6C4500804F18 /* UserSetting */,
 				4DC15841188B639600804F18 /* AppDelegate.h */,
 				4DC15842188B639600804F18 /* AppDelegate.m */,
 				4DC15844188B639600804F18 /* Main.storyboard */,
@@ -152,6 +202,68 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		4DC1586D188B6C4500804F18 /* UserSetting */ = {
+			isa = PBXGroup;
+			children = (
+				4DC1586E188B6C4500804F18 /* UserSettingUtil.h */,
+				4DC1586F188B6C4500804F18 /* UserSettingUtil.m */,
+			);
+			path = UserSetting;
+			sourceTree = "<group>";
+		};
+		4DC15871188B6C8000804F18 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				4DC15872188B6C8000804F18 /* NSDate+Softbuild.h */,
+				4DC15873188B6C8000804F18 /* NSDate+Softbuild.m */,
+				4DC15874188B6C8000804F18 /* NSString+URLEncoding.h */,
+				4DC15875188B6C8000804F18 /* NSString+URLEncoding.m */,
+				4DC15876188B6C8000804F18 /* NSString+Validate.h */,
+				4DC15877188B6C8000804F18 /* NSString+Validate.m */,
+				4DC15878188B6C8000804F18 /* UIImage+Edit.h */,
+				4DC15879188B6C8000804F18 /* UIImage+Edit.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		4DC1587E188B6CD500804F18 /* ExternalLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				4DC1588B188B7D0E00804F18 /* MBProgressHUD */,
+				4DC1587F188B6CD500804F18 /* SFHFKeychainUtils */,
+			);
+			path = ExternalLibrary;
+			sourceTree = "<group>";
+		};
+		4DC1587F188B6CD500804F18 /* SFHFKeychainUtils */ = {
+			isa = PBXGroup;
+			children = (
+				4DC15880188B6CD500804F18 /* MIT-LICENSE */,
+				4DC15881188B6CD500804F18 /* ReadMe */,
+				4DC15882188B6CD500804F18 /* SFHFKeychainUtils.h */,
+				4DC15883188B6CD500804F18 /* SFHFKeychainUtils.m */,
+			);
+			path = SFHFKeychainUtils;
+			sourceTree = "<group>";
+		};
+		4DC15887188B77C500804F18 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				4DC15888188B77E800804F18 /* BeaconAPI.h */,
+				4DC15889188B77E800804F18 /* BeaconAPI.m */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		4DC1588B188B7D0E00804F18 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				4DC1588C188B7D0E00804F18 /* MBProgressHUD.h */,
+				4DC1588D188B7D0E00804F18 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -159,9 +271,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4DC15861188B639600804F18 /* Build configuration list for PBXNativeTarget "BeaconReceiver" */;
 			buildPhases = (
+				A4A33758B30A49D493DCBBBF /* Check Pods Manifest.lock */,
 				4DC1582B188B639600804F18 /* Sources */,
 				4DC1582C188B639600804F18 /* Frameworks */,
 				4DC1582D188B639600804F18 /* Resources */,
+				3E5F00E4007F47E29327C677 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -228,7 +342,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DC15885188B6CD500804F18 /* ReadMe in Resources */,
 				4DC1584B188B639600804F18 /* Images.xcassets in Resources */,
+				4DC15884188B6CD500804F18 /* MIT-LICENSE in Resources */,
 				4DC1583D188B639600804F18 /* InfoPlist.strings in Resources */,
 				4DC15846188B639600804F18 /* Main.storyboard in Resources */,
 			);
@@ -244,14 +360,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3E5F00E4007F47E29327C677 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4A33758B30A49D493DCBBBF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4DC1582B188B639600804F18 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DC1588A188B77E800804F18 /* BeaconAPI.m in Sources */,
+				4DC1587B188B6C8000804F18 /* NSString+URLEncoding.m in Sources */,
 				4DC15849188B639600804F18 /* ViewController.m in Sources */,
+				4DC1587A188B6C8000804F18 /* NSDate+Softbuild.m in Sources */,
+				4DC1588E188B7D0E00804F18 /* MBProgressHUD.m in Sources */,
+				4DC1587D188B6C8000804F18 /* UIImage+Edit.m in Sources */,
 				4DC15843188B639600804F18 /* AppDelegate.m in Sources */,
+				4DC15886188B6CD500804F18 /* SFHFKeychainUtils.m in Sources */,
+				4DC1587C188B6C8000804F18 /* NSString+Validate.m in Sources */,
 				4DC1583F188B639600804F18 /* main.m in Sources */,
+				4DC15870188B6C4500804F18 /* UserSettingUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,6 +532,7 @@
 		};
 		4DC15862188B639600804F18 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B41C1CA35514F9AA7467C24 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -388,6 +546,7 @@
 		};
 		4DC15863188B639600804F18 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B41C1CA35514F9AA7467C24 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -460,6 +619,7 @@
 				4DC15863188B639600804F18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4DC15864188B639600804F18 /* Build configuration list for PBXNativeTarget "BeaconReceiverTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +628,7 @@
 				4DC15866188B639600804F18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
